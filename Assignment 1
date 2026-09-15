@@ -1,0 +1,149 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "7f881978-6dc7-4e32-b78c-54d4b346ee68",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter a number: 8\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Even\n"
+     ]
+    }
+   ],
+   "source": [
+    "x = int(input(\"Enter a number:\"))\n",
+    "\n",
+    "if x%2 == 0:\n",
+    "    print(\"Even\")\n",
+    "else:\n",
+    "    print(\"Odd\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "345e1071-533a-44b0-b80e-86bda252e8e2",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter 1st number: 4\n",
+      "Enter 2nd number: 77\n",
+      "Enter 3rd number: 89\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "z is greatest\n"
+     ]
+    }
+   ],
+   "source": [
+    "x=int(input(\"Enter 1st number:\"))\n",
+    "y=int(input(\"Enter 2nd number:\"))\n",
+    "z=int(input(\"Enter 3rd number:\"))\n",
+    "if x>y>z:\n",
+    "    print(\"x is greatest\")\n",
+    "elif y>x>z:\n",
+    "    print(\"y is greatest\")\n",
+    "else:\n",
+    "    print(\"z is greatest\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "2e06fac6-15fb-4a6d-8635-73fde8ca6594",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "List ('Xyz', 'Def', 'Abc', 'Mno')\n",
+      "Tuple ('Xyz', 'Def', 'Abc', 'Mno')\n",
+      "Dictionary {1: 'Xyz', 2: 'Def', 3: 'Abc', 4: 'Mno'}\n",
+      "\n",
+      "After adding student 4:\n",
+      "{1: 'Xyz', 2: 'Def', 3: 'Abc', 4: 'Ghi'}\n",
+      "\n",
+      "After updating student 6:\n",
+      "{1: 'Xyz', 2: 'Def', 3: 'Abc', 4: 'Ghi', 6: 'Ghi'}\n",
+      "\n",
+      "After deleting student 6:\n",
+      "{1: 'Xyz', 2: 'Def', 3: 'Abc', 4: 'Ghi'}\n"
+     ]
+    }
+   ],
+   "source": [
+    "student_list=(\"Xyz\", \"Def\", \"Abc\", \"Mno\")\n",
+    "student_tuple=(\"Xyz\", \"Def\", \"Abc\", \"Mno\")\n",
+    "student_dictionary= {\n",
+    "    1 : \"Xyz\",\n",
+    "    2 : \"Def\",\n",
+    "    3 : \"Abc\",\n",
+    "    4 : \"Mno\"\n",
+    "}\n",
+    "print(\"List\", student_list)\n",
+    "print(\"Tuple\", student_tuple)\n",
+    "print(\"Dictionary\", student_dictionary)\n",
+    "\n",
+    "student_dictionary[4]=\"Ghi\"\n",
+    "print(\"\\nAfter adding student 4:\")\n",
+    "print(student_dictionary)\n",
+    "\n",
+    "student_dictionary[6]=\"Ghi\"\n",
+    "print(\"\\nAfter updating student 6:\")\n",
+    "print(student_dictionary)\n",
+    "\n",
+    "del student_dictionary[6]\n",
+    "print(\"\\nAfter deleting student 6:\")\n",
+    "print(student_dictionary)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "43062a68-e9bf-40e1-b580-4bcff8f72a8a",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python [conda env:base] *",
+   "language": "python",
+   "name": "conda-base-py"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.13.9"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
